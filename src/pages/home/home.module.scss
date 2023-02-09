@@ -4,19 +4,54 @@
     flex-direction: column;
     position : relative;
     background-color: #05161e;
+}
+.trailerInfoSection{
+    height: 100%;
+    max-height: 500px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 3;
+}
+
+.trailerContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: flex-end;
+    padding: 30px;
+}
+
+.movieCardContainer{
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
     justify-content: space-between;
 }
 
-
-.playerSection{
+.movieImageWrapper{
     width: 100%;
     height: 500px;
-    object-fit: contain;
-    display: flex;
-    background-position: center;
-    background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(2, 0, 1, 0.73)),
-    url(../../../assets/images/marioSplashMovie.jpg);
-
+    position: relative;
+    
 }
+
+
+
+.gradient{
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width:100%;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(2, 0, 1, 0.73)),
+}
+
+.image{
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
 
