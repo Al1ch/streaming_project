@@ -1,0 +1,23 @@
+.container{
+    height: 120px;
+    width: 190px;
+    position : relative;
+    border-radius: 30px;
+    display: flex;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.titleMovie{
+    font-size: 20px;
+    position: absolute;
+    align-self: flex-end;
+    padding: 25px;
+    font: 600 1rem 'Roboto', sans-serif;
+}
