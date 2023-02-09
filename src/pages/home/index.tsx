@@ -8,11 +8,7 @@ const home = () => {
     <div className={styles.container}>
         <Header/>
         <div className={styles.playerSection}>
-            {
-              films.map((film, index) => {
-                console.log(film);
-              })
-            }
+
         </div>
     </div>
   )
