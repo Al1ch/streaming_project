@@ -4,6 +4,18 @@
     flex-direction: column;
     position : relative;
     background-color: #05161e;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1010px;
+    height: 1500px;
+    position: absolute;
+    margin: auto;
+    align-self: center;
+    
 }
 .trailerInfoSection{
     height: 100%;
@@ -21,6 +33,8 @@
     width: 100%;
     align-self: flex-end;
     padding: 30px;
+    justify-content: flex-start;
+    ;
 }
 
 .movieCardContainer{
@@ -28,6 +42,7 @@
     display: flex;
     align-self: flex-end;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .movieImageWrapper{
@@ -35,6 +50,16 @@
     height: 500px;
     position: relative;
     
+}
+
+.authorContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.movieInfo{
+    display: flex;
+    flex-direction: column;
 }
 
 

@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export type Film = {
+export type Movie = {
     id: number;
     title: string;
     author: string[];

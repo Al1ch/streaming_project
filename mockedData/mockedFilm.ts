@@ -18,5 +18,19 @@ import spidermanSplashMovie from "../assets/images/spidermanSplashImage.jpg";
         cardImage : spidermanSplashMovie,
         backgroundImage:  spidermanSplashMovie,
     },
+    {
+        id : 3,
+        title: "Spiderman Into the Spiderverse 2",
+        author : [" Peter Ramse", "Bob Persichetti"],
+        cardImage : spidermanSplashMovie,
+        backgroundImage:  spidermanSplashMovie,
+    },
+    {
+        id : 4,
+        title: "Spiderman Into the Spiderverse 2",
+        author : [" Peter Ramse", "Bob Persichetti"],
+        cardImage : spidermanSplashMovie,
+        backgroundImage:  spidermanSplashMovie,
+    },
 
 ];
