@@ -17,9 +17,11 @@
     "classnames": "^2.3.2",
     "eslint": "^8.7.0",
     "eslint-config-next": "13.1.6",
+    "intersection-observer": "^0.12.2",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.2",
     "react-svg": "^16.1.0",
     "sass": "^1.58.0",
     "typescript": "4.9.5"

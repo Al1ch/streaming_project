@@ -1,0 +1,26 @@
+@import "styles/text.scss";
+@import "styles/color.scss";
+
+.catalogSection {
+  padding: 10px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.titleSection {
+  font: $title-section;
+  color: $white-background;
+}
+
+.catalogList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+}

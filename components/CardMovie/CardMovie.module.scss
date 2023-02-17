@@ -1,32 +1,48 @@
-@import 'styles/color.scss';
+@import "styles/color.scss";
 
-.container{
-    height: 150px;
-    width: 250px;
-    position : relative;
-    border-radius: 30px;
-    display: flex;
-
+.container {
+  height: 150px;
+  width: 250px;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  border: 3px solid transparent;
+  overflow: hidden;
+  transition: transform 300ms, opacity 300ms;
+  opacity: 0;
+  transform: translate3d(0, 75px, 0);
+  transition-delay: calc(var(--card-index) / var(--card-count) * 400ms + 350ms);
 }
 
-.image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-    overflow: hidden;
+.reveal {
+  opacity: 1;
+  transform: none;
 }
 
-.titleMovie{
-    font-size: 20px;
-    position: absolute;
-    align-self: flex-end;
-    padding: 0 0 10px 10px;
-    color: $white-background;
-    opacity: 0.4;
-    font: 500 0.75rem 'Roboto', sans-serif;
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: transform 300ms;
 }
 
-.currentMovie{
-    border: 3px solid $white-background;
+.titleMovie {
+  font-size: 20px;
+  position: absolute;
+  z-index: 1;
+  align-self: flex-end;
+  padding: 0 0 10px 10px;
+  color: $white-background;
+  opacity: 0.6;
+  font: 500 0.75rem "Roboto", sans-serif;
+}
+
+.currentMovie {
+  border: 3px solid $white-background;
+
+  .image {
+    transform: scale(1.05);
+  }
 }

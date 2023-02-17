@@ -1,7 +1,8 @@
 import marioCardImage from "../assets/images/marioCardImage.jpg";
 import marioSplashMovie from "../assets/images/marioSplashMovie.jpg";
-import spidermanCardImage from "../assets/images/spidermanCard.jpg";
 import spidermanSplashMovie from "../assets/images/spidermanSplashImage.jpg";
+import spidermanCardImage from "../assets/images/antmanCardImage.jpg";
+
 
  export const films = [
     {
@@ -23,7 +24,7 @@ import spidermanSplashMovie from "../assets/images/spidermanSplashImage.jpg";
         title: "Spiderman Into the Spiderverse 2",
         author : [" Peter Ramse", "Bob Persichetti"],
         cardImage : spidermanSplashMovie,
-        backgroundImage:  spidermanSplashMovie,
+        backgroundImage:  spidermanCardImage,
     },
     {
         id : 4,

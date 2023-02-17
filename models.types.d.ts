@@ -7,3 +7,11 @@ export type Movie = {
     cardImage: string | StaticImageData;
     backgroundImage: string | StaticImageData;
 }
+
+export type MovieCatalog = {
+    id : number;
+    title: string;
+    release : string;
+    mediaDiffusion : string;
+    image : string | StaticImageData;
+}

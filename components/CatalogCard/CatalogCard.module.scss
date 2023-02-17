@@ -1,0 +1,57 @@
+@import "styles/text.scss";
+@import "styles/color.scss";
+
+.catalogItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 150px;
+  transition: transform 200ms, opacity 300ms;
+  opacity: 0;
+  transform: translate3d(0, 75px, 0);
+  transition-delay: calc(
+    var(--card-index) / var(--movieLenght) * 400ms + 350ms
+  );
+}
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.movieCardImage {
+  width: 140px;
+  height: 200px;
+}
+
+.titleCard {
+  font: $title-movie-card;
+  color: $white-background;
+}
+
+.cardMovie {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.description {
+  display: flex;
+  gap: 10px;
+  color: $white-background;
+  align-items: center;
+  font: $title-movie-card;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  color: $white-background;
+  border: 1px solid yellow;
+}
