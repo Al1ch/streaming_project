@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, {useState} from 'react'
-import styles from './home.module.scss'
+import styles from './movies.module.scss'
 import Header from 'components/Header/Header'
 import CardMovie from 'components/CardMovie/CardMovie';
 import {films} from 'mockedData/mockedTrailerFilms';
@@ -8,13 +8,56 @@ import {Movie} from 'models.types';
 import Image from 'next/image';
 import CatalogCardSection from 'components/CatalogCardSection/CatalogCardSection';
 import { movieTrending, movieComing } from 'mockedData/mockedCatalogFilm';
+import globalStyle  from 'styles/globalStyles.module.scss';
 
-const Home = () => {
+export async function getPostIdList() {
+  return [{
+    params: {
+      name:'Mario'
+    }
+  }, {
+    params: {
+      name:'Spiderman'
+    }
+  }, {
+    params: {
+      name:'Test'
+    }
+  }]
+}
+
+export async function getPostDetails(postId : string) {
+  
+
+  const dataSet = {
+    'Mario': {
+      title: 'Post 1',
+      description: 'Lorem ipsum dolor sit amet...',
+      date: 'Oct 10, 2022'
+    },
+    'Spiderman': {
+      title: 'Post 2',
+      description: 'Lorem ipsum dolor sit amet...',
+      date: 'Oct 20, 2022'
+    },
+    'Test': {
+      title: 'Post 3',
+      description: 'Lorem ipsum dolor sit amet...',
+      date: 'Oct 30, 2022'
+    }
+  }
+  return dataSet[postId as keyof typeof dataSet]
+}
+
+
+const Movies = () => {
 
   const [movie, setMovie] = useState<Movie>(films[0]);
 
   
   const cssVars = { "--card-count": films.length } as React.CSSProperties;
+
+  
 
   const handleMovieChange = (movieClicked : Movie) => {
     
@@ -22,11 +65,11 @@ const Home = () => {
   }
 
   return (
-    <div className={styles.container}>
-            <div> </div>
+    <div className={globalStyle.main}>
+         
       <div className={styles.wrapper}>
         <Header/>
-
+  
         <div className={styles.trailerInfoSection}>
 
           <div className={styles.trailerContainer}>
@@ -56,4 +99,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Movies;
